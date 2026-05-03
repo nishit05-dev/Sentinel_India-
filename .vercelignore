@@ -1,0 +1,11 @@
+scratch/
+docs/
+.git/
+.env.local
+Dockerfile
+.dockerignore
+AGENTS.md
+CLAUDE.md
+Sentinel_India_Design.md
+Sentinel_India_PRD.md
+Sentinel_India_TechStack.md

@@ -10,9 +10,9 @@ const Map = dynamic(() => import('@/components/Map'), {
 })
 
 const INITIAL_BOOTHS = [
-  { id: 1, name: "St. Mary's School", address: "Sector 3, New Delhi", latitude: 28.6139, longitude: 77.2090, distance: "0.8 km" },
-  { id: 2, name: "Community Hall", address: "Sector 5, New Delhi", latitude: 28.6200, longitude: 77.2150, distance: "1.2 km" },
-  { id: 3, name: "Govt. High School", address: "Sector 1, New Delhi", latitude: 28.6050, longitude: 77.2000, distance: "2.1 km" },
+  { id: "1", name: "St. Mary's School", address: "Sector 3, New Delhi", latitude: 28.6139, longitude: 77.2090, distance: "0.8 km" },
+  { id: "2", name: "Community Hall", address: "Sector 5, New Delhi", latitude: 28.6200, longitude: 77.2150, distance: "1.2 km" },
+  { id: "3", name: "Govt. High School", address: "Sector 1, New Delhi", latitude: 28.6050, longitude: 77.2000, distance: "2.1 km" },
 ]
 
 export default function PollingHub() {
@@ -89,7 +89,7 @@ export default function PollingHub() {
       navigator.geolocation.getCurrentPosition((position) => {
         const { latitude, longitude } = position.coords
         const newBooth = {
-          id: Date.now(),
+          id: Date.now().toString(),
           name: "Your Live Location",
           address: "Geolocation API coordinates",
           latitude,
