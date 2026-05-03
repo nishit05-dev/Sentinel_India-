@@ -13,7 +13,7 @@ if (process.env.NODE_ENV === 'development') {
       await geminiFlashModel.generateContent("test");
       console.log("Gemini Connection: SUCCESS");
     } catch (e) {
-      console.error("Gemini Connection: FAILED", e.message);
+      console.error("Gemini Connection: FAILED", e);
     }
   })();
 }
