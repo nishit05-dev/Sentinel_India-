@@ -4,6 +4,8 @@
 
 Sentinel India is a neutral, technology-driven ecosystem designed to simplify voter registration, candidate evaluation, and polling logistics for the 2026 Indian elections.
 
+🚀 **Live Demo:** [https://sentinel-india-2026.vercel.app](https://sentinel-india-2026.vercel.app)
+
 ---
 
 ## 🚀 Vision
