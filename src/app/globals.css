@@ -1,0 +1,39 @@
+@import "tailwindcss";
+@import "leaflet/dist/leaflet.css";
+
+:root {
+  --background: #0F172A;
+  --foreground: #F8FAFC;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-sentinel-green: #10B981;
+  --color-sky-blue: #38BDF8;
+  --color-warning: #FACC15;
+  --color-error: #FB7185;
+  --font-sans: var(--font-inter);
+  --font-heading: var(--font-inter);
+  --font-metrics: var(--font-roboto);
+}
+
+body {
+  background-color: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-sans), sans-serif;
+}
+
+@layer components {
+  .card {
+    @apply rounded-[12px] border border-white/10 bg-white/5 backdrop-blur-sm p-6 shadow-xl;
+  }
+  
+  .btn-primary {
+    @apply rounded-[8px] bg-sentinel-green text-gray-900 font-bold px-4 py-2 hover:bg-emerald-400 transition-colors focus:outline-none focus:ring-2 focus:ring-sentinel-green focus:ring-offset-2 focus:ring-offset-background;
+  }
+
+  .btn-secondary {
+    @apply rounded-[8px] border border-white/20 text-white font-bold px-4 py-2 hover:bg-white/10 transition-colors focus:outline-none focus:ring-2 focus:ring-white/20 focus:ring-offset-2 focus:ring-offset-background;
+  }
+}
